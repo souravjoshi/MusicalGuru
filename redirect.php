@@ -1,0 +1,6 @@
+<?
+
+
+header('location:mainpage.html');
+
+?>
