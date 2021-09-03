@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment</title>
+    <style>
+        table{
+            text-align: center;
+            border-color: lightgray;
+            width: 80%
+        }
+        img{
+            width: 80px;
+        }
+    </style>
+</head>
+<body>  
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input type="hidden" name="business" value="musicalgurupayment@business.example.com">
+        
+        <input type="hidden" name="item_name_1" value="HTC LATEST CELL PHONE">
+        <input type="hidden" name="amount_1" value="3">
+        <input type="hidden" name="quantity_1" value="3">
+        
+        <input type="hidden" name="item_name_2" value="REDMI MI INDIA'S BEST CELL PHONE">
+        <input type="hidden" name="amount_2" value="1">
+        <input type="hidden" name="quantity_2" value="2">
+        <input type="submit" value="PayPal">
+        </form>
+  
+</body>
+</html>
